@@ -1,6 +1,6 @@
-# ======================== Elasticsearch Configuration =========================
+# ======================== OpenSearch Configuration =========================
 #
-# NOTE: Elasticsearch comes with reasonable defaults for most settings.
+# NOTE: OpenSearch comes with reasonable defaults for most settings.
 #       Before you set out to tweak and tune the configuration, make sure you
 #       understand what are you trying to accomplish and the consequences.
 #
@@ -8,7 +8,7 @@
 # the most important settings you may want to configure for a production cluster.
 #
 # Please consult the documentation for further information on configuration options:
-# https://www.elastic.co/guide/en/elasticsearch/reference/index.html
+# https://www.opensearch.org
 #
 # ---------------------------------- Cluster -----------------------------------
 #
@@ -30,11 +30,11 @@
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-path.data: /var/lib/elasticsearch
+#path.data: /path/to/data
 #
 # Path to log files:
 #
-path.logs: /var/log/elasticsearch
+#path.logs: /path/to/logs
 #
 # ----------------------------------- Memory -----------------------------------
 #
@@ -46,13 +46,13 @@ path.logs: /var/log/elasticsearch
 # on the system and that the owner of the process is allowed to use this
 # limit.
 #
-# Elasticsearch performs poorly when the system is swapping the memory.
+# OpenSearch performs poorly when the system is swapping the memory.
 #
 # ---------------------------------- Network -----------------------------------
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-network.host: 127.0.0.1
+network.host: "_local_"
 #
 # Set a custom port for HTTP:
 #
