@@ -40,7 +40,7 @@
 #
 # Lock the memory on startup:
 #
-#bootstrap.memory_lock: true
+bootstrap.memory_lock: true
 #
 # Make sure that the heap size is set to about half the memory available
 # on the system and that the owner of the process is allowed to use this
@@ -67,9 +67,9 @@ network.host: "_local_"
 #
 #discovery.seed_hosts: ["host1", "host2"]
 #
-# Bootstrap the cluster using an initial set of master-eligible nodes:
+# Bootstrap the cluster using an initial set of cluster-manager-eligible nodes:
 #
-#cluster.initial_master_nodes: ["node-1", "node-2"]
+#cluster.initial_cluster_manager_nodes: ["node-1", "node-2"]
 #
 # For more information, consult the discovery and cluster formation module documentation.
 #
